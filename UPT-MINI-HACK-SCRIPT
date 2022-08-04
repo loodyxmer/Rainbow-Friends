@@ -197,7 +197,8 @@ TP.TextStrokeTransparency = 0.000
 TP.TextWrapped = true
 TP.Visible = true
 TP.MouseButton1Click:Connect(function()
-for i,v in pairs(game.Players:GetChildren()) do
+local plr = game.Players.LocalPlayer.Character
+for i, v in pairs(game.Players:GetChildren()) do
 	if v.Name:lower():match(TP.Parent.player_textbox.Text:lower()) then
 		game.Players.LocalPlayer.Character:MoveTo(v.Character.Head.Position)
 	end
