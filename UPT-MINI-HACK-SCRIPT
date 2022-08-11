@@ -350,12 +350,38 @@ local function tacking(actionName,inputState)
 
 
 --Auto Collect Cash--
-            for i, z in pairs(game.Workspace:GetDescendants("Tycoons")) do
-                if z:IsA("Part") and z.Name == "Ching" then
-                    z.Transparency = 1
-                    z.Size = Vector3.new(3000, 3000, 3000)
-                end
+function get_user_tycoon()
+    for i, v in pairs(workspace.Tycoons:GetChildren()) do
+        if v:FindFirstChild("isim") then
+            if v.isim.Value == game.Players.LocalPlayer.Name then
+                return v
             end
+        end
+    end
+end
+
+function run()
+    local user_tycoon = get_user_tycoon()
+    local cash_register = user_tycoon.CashRegister.Ching
+    cash_register.Transparency = 1
+    cash_register.CanCollide = false
+    local ultima_cash_register = nil
+    while true do
+        cash_register.Position = game.Players.LocalPlayer.Character.Head.Position
+        if user_tycoon:FindFirstChild("UltimaPad") then
+            if user_tycoon:FindFirstChild("CashRegister2") then
+                ultima_cash_register = user_tycoon.UltimaPad.CashRegister2.Ching
+                ultima_cash_register.Transparency = 1
+                ultima_cash_register.CanCollide = false
+                ultima_cash_register.Position = game.Players.LocalPlayer.Character.Head.Position
+            end
+        end
+        wait(0.5)
+    end
+end
+run()
+			
+
 		end
 	end
 end
@@ -397,6 +423,8 @@ game:GetService("ContextActionService"):BindAction("Tack3", tacking, false, Enum
 local function tacking(actionName,inputState)
     if actionName == "Tack4" then
         if inputState == Enum.UserInputState.Begin then
+			spawn(function ()
+				
 			function get_user_tycoon() --Detect-Tycoon-Name
 				for i, v in pairs(workspace.Tycoons:GetChildren()) do
 					if v:FindFirstChild("isim") then
@@ -440,6 +468,7 @@ local function tacking(actionName,inputState)
 		end
 	end
 run()
+end)
 end
 end
 end
