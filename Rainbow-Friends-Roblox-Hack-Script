@@ -24,7 +24,7 @@ Looody.Parent = game.CoreGui
 main.Name = "main"
 main.Parent = Looody
 main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-main.Position = UDim2.new(0.673771977, 0, 0.34591195, 0)
+main.Position = UDim2.new(0.013771977, 0, 0.74591195, 0)
 main.Size = UDim2.new(0, 178, 0, 147)
 main.Visible = false
 main.Active = true
@@ -46,7 +46,7 @@ bottomtitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 bottomtitle.Position = UDim2.new(0, 0, 0.850340128, 0)
 bottomtitle.Size = UDim2.new(0, 178, 0, 22)
 bottomtitle.Font = Enum.Font.GothamBlack
-bottomtitle.Text = "HACKING IS NOT A CRIME, IT'S AN ART\n(X)"
+bottomtitle.Text = "HACKING IS NOT A CRIME, IT'S AN ART(X)"
 bottomtitle.TextColor3 = Color3.fromRGB(89, 34, 89)
 bottomtitle.TextScaled = true
 bottomtitle.TextSize = 20
@@ -86,10 +86,24 @@ RB.MouseButton1Down:connect(
     function()
         RB.Visible = false
         tp.Visible = true
+        --Final-Blocks
         for i, v in pairs(game.Workspace.Map_Finale.FinaleBlocks:GetChildren()) do
             v:Destroy()
             wait(0.01)
         end
+        --Vent-Obsticle
+        for i, v in pairs(game:GetService("Workspace")["Map_Finale"].PlankSkillChecks:GetChildren()) do
+            v:Destroy()
+            wait(0.01)
+        end
+        
+        ---vent barrier
+        game:GetService("Workspace")["Map_Finale"].VentHitbox:Destroy()
+
+
+        -- blue stop
+        game:GetService("Workspace")["Map_Finale"].blueCrushAnchor.Transparency = 0.7
+
     end
 )
 
@@ -120,7 +134,8 @@ tp.BackgroundTransparency = 0.4
 tp.Visible = false
 tp.MouseButton1Down:connect(
     function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-363.682, 17.175, 632.627)
+    local f = game:GetService("Workspace")["Map_Finale"].EscapedTrigger.CFrame
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(f.x, f.y, f.z)
     end
 )
 
@@ -776,7 +791,6 @@ OP.Active = true
 OP.MouseButton1Down:connect(
     function()
         main.Visible = true
-        wait(0.5)
         OP.Visible = false
     end
 )
