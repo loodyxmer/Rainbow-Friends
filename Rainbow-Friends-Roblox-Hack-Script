@@ -8,7 +8,7 @@ local boxon = Instance.new("TextButton")
 local esp = Instance.new("TextButton")
 local RB = Instance.new("TextButton")
 local tp = Instance.new("TextButton")
-local infy = Instance.new("TextButton")
+local bp = Instance.new("TextButton")
 local balloon = Instance.new("TextButton")
 local redeem = Instance.new("TextButton")
 local Qtotp = Instance.new("TextButton")
@@ -84,6 +84,8 @@ RB.BackgroundTransparency = 0.4
 RB.Visible = true
 RB.MouseButton1Down:connect(
     function()
+    for i=5,1,-1 do
+        wait(0.001)
         RB.Visible = false
         tp.Visible = true
         --Final-Blocks
@@ -103,8 +105,8 @@ RB.MouseButton1Down:connect(
 
         -- blue stop
         game:GetService("Workspace")["Map_Finale"].blueCrushAnchor.Transparency = 0.7
-
     end
+end
 )
 
 RB.MouseEnter:Connect(
@@ -557,32 +559,32 @@ redeem.MouseLeave:Connect(
     end
 )
 
-infy.Name = "infy"
-infy.Parent = main
-infy.BackgroundColor3 = Color3.fromRGB(0, 255, 238)
-infy.Position = UDim2.new(0.140449435, 0, 0.421768725, 0)
-infy.Size = UDim2.new(0, 64, 0, 22)
-infy.Font = Enum.Font.Fantasy
-infy.Text = "Cmd+Pop"
-infy.TextColor3 = Color3.fromRGB(0, 0, 0)
-infy.TextSize = 14.000
-infy.Visible = true
-infy.MouseButton1Down:connect(
+bp.Name = "bp"
+bp.Parent = main
+bp.BackgroundColor3 = Color3.fromRGB(0, 255, 238)
+bp.Position = UDim2.new(0.140449435, 0, 0.421768725, 0)
+bp.Size = UDim2.new(0, 64, 0, 22)
+bp.Font = Enum.Font.Fantasy
+bp.Text = "light+Pop"
+bp.TextColor3 = Color3.fromRGB(0, 0, 0)
+bp.TextSize = 14.000
+bp.Visible = true
+bp.MouseButton1Down:connect(
     function()
-        infy.Visible = false
+        bp.Visible = false
         balloon.Visible = true
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/loodyxmer/Scripts/main/bright"))()
     end
 )
 
-infy.MouseEnter:Connect(
+bp.MouseEnter:Connect(
     function()
-        title.Text = "CMD + balloon-pops"
+        title.Text = "Bright + balloon-pop"
         title.TextColor3 = Color3.fromRGB(40, 89, 40)
     end
 )
 
-infy.MouseLeave:Connect(
+bp.MouseLeave:Connect(
     function()
         title.Text = "Welcome To Loody's GUI"
         title.TextColor3 = Color3.fromRGB(89, 34, 89)
