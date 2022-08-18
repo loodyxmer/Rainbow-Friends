@@ -98,11 +98,6 @@ RB.MouseButton1Down:connect(
             v:Destroy()
             wait(0.01)
         end
-        
-        ---vent barrier
-        game:GetService("Workspace")["Map_Finale"].VentHitbox:Destroy()
-
-
         -- blue stop
         game:GetService("Workspace")["Map_Finale"].blueCrushAnchor.Transparency = 0.7
     end
