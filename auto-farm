@@ -1,0 +1,16 @@
+while getgenv().farm == true do
+    wait(0)
+    local plr = game.Players.LocalPlayer.Character.HumanoidRootPart
+    local final = game:GetService("Workspace").BoatStages.NormalStages.TheEnd.GoldenChest.Trigger
+    for i, v in pairs (game:GetService("Workspace").BoatStages.NormalStages:GetChildren()) do
+        wait(2.5)
+        game.Workspace.Gravity = 0
+        if v.Name:match("CaveStage") then
+                plr.CFrame = CFrame.new(v.DarknessPart.CFrame.X, v.DarknessPart.CFrame.Y, v.DarknessPart.CFrame.Z)
+        end
+    end
+    wait(0)
+    plr.CFrame = CFrame.new(final.CFrame.X, final.CFrame.Y, final.CFrame.Z)
+    game.Workspace.Gravity = 196.2
+    wait(17)
+end
