@@ -1,0 +1,441 @@
+-- THIS WAS MADE BY (LOODY_XMER)5605 , @kd_xr.
+
+local Looody = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local title = Instance.new("TextLabel")
+local bottomtitle = Instance.new("TextButton")
+local gui = Instance.new("TextButton")
+local fly = Instance.new("TextButton")
+local ESP = Instance.new("TextButton")
+local uptc = Instance.new("TextButton")
+local farm = Instance.new("TextButton")
+local nof = Instance.new("TextButton")
+local infjump = Instance.new("TextButton")
+local Qtotp = Instance.new("TextButton")
+local build = Instance.new("TextButton")
+local rb = Instance.new("TextButton")
+local OP = Instance.new("TextButton")
+local close = Instance.new("TextButton")
+
+--Properties:
+Looody.Name = "Looody"
+Looody.Parent = game.CoreGui
+
+main.Name = "main"
+main.Parent = Looody
+main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+main.Position = UDim2.new(0.673771977, 0, 0.34591195, 0)
+main.Size = UDim2.new(0, 178, 0, 147)
+main.Visible = false
+main.Active = true
+main.Transparency = 0.2
+main.Draggable = true
+
+title.Name = "title"
+title.Parent = main
+title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title.Size = UDim2.new(0, 153, 0, 29)
+title.Font = Enum.Font.Highway
+title.Text = "Welcome To Loody's GUI"
+title.TextColor3 = Color3.fromRGB(89, 34, 89)
+title.TextSize = 14.000
+
+bottomtitle.Name = "bottomtitle"
+bottomtitle.Parent = main
+bottomtitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+bottomtitle.Position = UDim2.new(0, 0, 0.850340128, 0)
+bottomtitle.Size = UDim2.new(0, 178, 0, 22)
+bottomtitle.Font = Enum.Font.GothamBlack
+bottomtitle.Text = "HACKING IS NOT A CRIME, IT'S AN ART(X)"
+bottomtitle.TextColor3 = Color3.fromRGB(89, 34, 89)
+bottomtitle.TextScaled = true
+bottomtitle.TextSize = 20
+bottomtitle.TextWrapped = true
+bottomtitle.MouseButton1Down:connect(
+    function()
+        game.CoreGui.Looody:Destroy()
+    end
+)
+
+bottomtitle.MouseEnter:Connect(
+    function()
+        title.Text = "Delete GUI"
+        title.TextColor3 = Color3.fromRGB(255, 0, 0)
+    end
+)
+
+bottomtitle.MouseLeave:Connect(
+    function()
+        title.Text = "Welcome To Loody's GUI"
+        title.TextColor3 = Color3.fromRGB(89, 34, 89)
+    end
+)
+
+fly.Name = "fly"
+fly.Parent = main
+fly.BackgroundColor3 = Color3.fromRGB(0, 255, 238)
+fly.Position = UDim2.new(0.69, 0, 0.238095239, 0)
+fly.Size = UDim2.new(0, 30, 0, 22)
+fly.Font = Enum.Font.Fantasy
+fly.Text = "FLY"
+fly.TextColor3 = Color3.fromRGB(0, 0, 0)
+fly.TextSize = 14.000
+fly.BackgroundTransparency = 0.4
+fly.Visible = true
+fly.MouseButton1Down:connect(
+    function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/loodyxmer/Scripts/main/fly"))()
+    end
+)
+
+fly.MouseEnter:Connect(
+    function()
+        title.Text = "FLY TOGGLE ->(F)"
+        title.TextColor3 = Color3.fromRGB(40, 89, 40)
+    end
+)
+
+fly.MouseLeave:Connect(
+    function()
+        title.Text = "Welcome To Loody's GUI"
+        title.TextColor3 = Color3.fromRGB(89, 34, 89)
+    end
+)
+
+ESP.Name = "ESP"
+ESP.Parent = main
+ESP.BackgroundColor3 = Color3.fromRGB(0, 255, 238)
+ESP.Position = UDim2.new(0.140449435, 0, 0.238095239, 0)
+ESP.Size = UDim2.new(0, 30, 0, 22)
+ESP.Font = Enum.Font.Fantasy
+ESP.Text = "ESP"
+ESP.TextColor3 = Color3.fromRGB(0, 0, 0)
+ESP.TextSize = 14.000
+ESP.BackgroundTransparency = 0.4
+ESP.Visible = true
+ESP.MouseButton1Down:connect(
+    function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/loodyxmer/Scripts/main/babft%20esp"))()
+    end
+)
+
+ESP.MouseEnter:Connect(
+    function()
+        title.Text = "E-S-P"
+        title.TextColor3 = Color3.fromRGB(40, 89, 40)
+    end
+)
+
+ESP.MouseLeave:Connect(
+    function()
+        title.Text = "Welcome To Loody's GUI"
+        title.TextColor3 = Color3.fromRGB(89, 34, 89)
+    end
+)
+
+gui.Name = "S&J GUI"
+gui.Parent = main
+gui.BackgroundColor3 = Color3.fromRGB(0, 255, 238)
+gui.Position = UDim2.new(0.320224732, 0, 0.238095239, 0)
+gui.Size = UDim2.new(0, 64, 0, 22)
+gui.Font = Enum.Font.Fantasy
+gui.Text = "S&J GUI"
+gui.TextColor3 = Color3.fromRGB(0, 0, 0)
+gui.TextSize = 14.000
+gui.Visible = true
+gui.MouseButton1Down:connect(
+    function()
+        loadstring(
+            game:HttpGet(
+                "https://raw.githubusercontent.com/loodyxmer/Scripts/main/Walkspeed%20and%20JumpPower%20Script"
+            )
+        )()
+    end
+)
+
+gui.MouseEnter:Connect(
+    function()
+        title.Text = "WSpeed & HJump"
+        title.TextColor3 = Color3.fromRGB(40, 89, 40)
+    end
+)
+
+gui.MouseLeave:Connect(
+    function()
+        title.Text = "Welcome To Loody's GUI"
+        title.TextColor3 = Color3.fromRGB(89, 34, 89)
+    end
+)
+
+farm.Name = "farm"
+farm.Parent = main
+farm.BackgroundColor3 = Color3.fromRGB(0, 255, 238)
+farm.Position = UDim2.new(0.140449435, 0, 0.421768725, 0)
+farm.Size = UDim2.new(0, 64, 0, 22)
+farm.Font = Enum.Font.Fantasy
+farm.Text = "Auto-Farm"
+farm.TextColor3 = Color3.fromRGB(0, 0, 0)
+farm.TextSize = 14.000
+farm.Visible = true
+farm.MouseButton1Down:connect(
+    function()
+        farm.Visible = false
+        nof.Visible = true
+        for i, v in pairs(game:GetService("Workspace").BoatStages.NormalStages:GetChildren()) do
+            wait(0)
+            if v.Name:match("CaveStage") then
+                v.DarknessPart.Transparency = 0.8
+                v.DarknessPart.Color = Color3.fromRGB(255, 100, 100)
+                v.DarknessPart.Material = "Neon"
+            end
+        end
+        getgenv().farm = true
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/loodyxmer/Scripts/main/auto-farm"))()
+    end
+)
+
+farm.MouseEnter:Connect(
+    function()
+        title.Text = "Auto-Farm!"
+        title.TextColor3 = Color3.fromRGB(40, 89, 40)
+    end
+)
+
+farm.MouseLeave:Connect(
+    function()
+        title.Text = "Welcome To Loody's GUI"
+        title.TextColor3 = Color3.fromRGB(89, 34, 89)
+    end
+)
+
+nof.Name = "nof"
+nof.Parent = main
+nof.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+nof.Position = UDim2.new(0.140449435, 0, 0.421768725, 0)
+nof.Size = UDim2.new(0, 64, 0, 22)
+nof.Font = Enum.Font.Fantasy
+nof.Text = "STOP-F"
+nof.TextColor3 = Color3.fromRGB(0, 0, 0)
+nof.TextSize = 14.000
+nof.Visible = false
+nof.MouseButton1Down:connect(
+    function()
+        nof.Visible = false
+        getgenv().farm = false
+        game.Players.LocalPlayer.Character.Head:Destroy()
+        farm.Visible = true
+    end
+)
+
+nof.MouseEnter:Connect(
+    function()
+        title.Text = "Stop-Farming"
+        title.TextColor3 = Color3.fromRGB(40, 89, 40)
+    end
+)
+
+nof.MouseLeave:Connect(
+    function()
+        title.Text = "Welcome To Loody's GUI"
+        title.TextColor3 = Color3.fromRGB(89, 34, 89)
+    end
+)
+
+infjump.Name = "inf jump"
+infjump.Parent = main
+infjump.BackgroundColor3 = Color3.fromRGB(0, 255, 238)
+infjump.Position = UDim2.new(0.140449435, 0, 0.625850379, 0)
+infjump.Size = UDim2.new(0, 64, 0, 22)
+infjump.Font = Enum.Font.Fantasy
+infjump.Text = "Inf-Jump"
+infjump.TextColor3 = Color3.fromRGB(0, 0, 0)
+infjump.TextSize = 14.000
+infjump.MouseButton1Down:connect(
+    function()
+        game:GetService("UserInputService").JumpRequest:connect(
+            function()
+                game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):ChangeState(
+                    "Jumping"
+                )
+            end
+        )
+    end
+)
+
+infjump.MouseEnter:Connect(
+    function()
+        title.Text = "Infinte Jump"
+        title.TextColor3 = Color3.fromRGB(40, 89, 40)
+    end
+)
+
+infjump.MouseLeave:Connect(
+    function()
+        title.Text = "Welcome To Loody's GUI"
+        title.TextColor3 = Color3.fromRGB(89, 34, 89)
+    end
+)
+
+Qtotp.Name = "Q to tp"
+Qtotp.Parent = main
+Qtotp.BackgroundColor3 = Color3.fromRGB(0, 255, 238)
+Qtotp.Position = UDim2.new(0.49999997, 0, 0.421768755, 0)
+Qtotp.Size = UDim2.new(0, 64, 0, 22)
+Qtotp.Font = Enum.Font.Fantasy
+Qtotp.Text = "Q to tp"
+Qtotp.TextColor3 = Color3.fromRGB(0, 0, 0)
+Qtotp.TextSize = 14.000
+Qtotp.MouseButton1Down:connect(
+    function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/loodyxmer/Scripts/main/Q-TO-TP"))()
+    end
+)
+
+Qtotp.MouseEnter:Connect(
+    function()
+        title.Text = "Press 'Q' to tp"
+        title.TextColor3 = Color3.fromRGB(40, 89, 40)
+    end
+)
+
+Qtotp.MouseLeave:Connect(
+    function()
+        title.Text = "Welcome To Loody's GUI"
+        title.TextColor3 = Color3.fromRGB(89, 34, 89)
+    end
+)
+
+build.Name = "build"
+build.Parent = main
+build.BackgroundColor3 = Color3.fromRGB(0, 255, 238)
+build.Position = UDim2.new(0.49999997, 0, 0.625850379, 0)
+build.Size = UDim2.new(0, 64, 0, 22)
+build.Font = Enum.Font.Fantasy
+build.Text = "Auto-Build"
+build.TextColor3 = Color3.fromRGB(0, 0, 0)
+build.TextScaled = true
+build.TextSize = 14.000
+build.TextWrapped = true
+build.Visible = true
+build.MouseButton1Down:connect(
+    function()
+        build.Visible = false
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/StenDirt/Trash-Game/main/Script.lua"))()
+        rb.Visible = true
+    end
+)
+
+build.MouseEnter:Connect(
+    function()
+        title.Text = "Auto-Builder-GUI"
+        title.TextColor3 = Color3.fromRGB(40, 89, 40)
+    end
+)
+
+build.MouseLeave:Connect(
+    function()
+        title.Text = "Welcome To Loody's GUI"
+        title.TextColor3 = Color3.fromRGB(89, 34, 89)
+    end
+)
+
+--
+rb.Name = "rb"
+rb.Parent = main
+rb.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+rb.Position = UDim2.new(0.49999997, 0, 0.625850379, 0)
+rb.Size = UDim2.new(0, 64, 0, 22)
+rb.Font = Enum.Font.Fantasy
+rb.Text = "{X}"
+rb.TextColor3 = Color3.fromRGB(0, 0, 0)
+rb.TextScaled = true
+rb.TextSize = 14.000
+rb.TextWrapped = true
+rb.Visible = false
+rb.MouseButton1Down:connect(
+    function()
+        rb.Visible = false
+        game:GetService("CoreGui").Lib:Destroy()
+        build.Visible = true
+    end
+)
+
+rb.MouseEnter:Connect(
+    function()
+        title.Text = "Remove AutoBuilder"
+        title.TextColor3 = Color3.fromRGB(255, 0, 0)
+    end
+)
+
+rb.MouseLeave:Connect(
+    function()
+        title.Text = "Welcome To Loody's GUI"
+        title.TextColor3 = Color3.fromRGB(89, 34, 89)
+    end
+)
+
+close.Name = "close"
+close.Parent = main
+close.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+close.Position = UDim2.new(0.859550536, 0, 0, 0)
+close.Size = UDim2.new(0, 25, 0, 29)
+close.Font = Enum.Font.Highway
+close.Text = "X"
+close.TextColor3 = Color3.fromRGB(0, 0, 0)
+close.TextSize = 20.000
+close.Transparency = 0.2
+close.MouseButton1Down:connect(
+    function()
+        main.Visible = false
+        OP.Visible = true
+    end
+)
+
+close.MouseEnter:Connect(
+    function()
+        title.Text = "Minimize Gui '-'"
+        title.TextColor3 = Color3.fromRGB(10, 0, 101)
+    end
+)
+
+close.MouseLeave:Connect(
+    function()
+        title.Text = "Welcome To Loody's GUI"
+        title.TextColor3 = Color3.fromRGB(89, 34, 89)
+    end
+)
+
+OP.Name = "Open"
+OP.Parent = Looody
+OP.BackgroundColor3 = Color3.fromRGB(0, 255, 238)
+OP.Position = UDim2.new(0.0129749756, 0, 0.737051845, 0)
+OP.Size = UDim2.new(0, 115, 0, 43)
+OP.Font = Enum.Font.Fantasy
+OP.Text = "OPEN"
+OP.TextColor3 = Color3.fromRGB(0, 0, 0)
+OP.TextScaled = true
+OP.TextSize = 20.000
+OP.Draggable = true
+OP.Visible = true
+OP.Active = true
+OP.MouseButton1Down:connect(
+    function()
+        main.Visible = true
+        wait(0.5)
+        OP.Visible = false
+    end
+)
+
+OP.MouseEnter:Connect(
+    function()
+        OP.Text = "'BABFT'"
+        OP.TextColor3 = Color3.fromRGB(255, 100, 0)
+    end
+)
+
+OP.MouseLeave:Connect(
+    function()
+        OP.Text = "OPEN"
+        OP.TextColor3 = Color3.fromRGB(0, 0, 0)
+    end
+)
