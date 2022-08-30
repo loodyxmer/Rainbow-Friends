@@ -90,7 +90,7 @@ fly.MouseButton1Down:connect(
 
 fly.MouseEnter:Connect(
     function()
-        title.Text = "FLY TOGGLE ->(F)"
+        title.Text = "FLY TOGGLE ->(G)"
         title.TextColor3 = Color3.fromRGB(40, 89, 40)
     end
 )
