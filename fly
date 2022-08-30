@@ -4,7 +4,7 @@ local LP = Players.LocalPlayer
 local Mouse = LP:GetMouse()
 Mouse.KeyDown:connect(
     function(k)
-        if k:lower() == "f" then
+        if k:lower() == "g" then
             Max = Max + 1
             getgenv().Fly = false
                 local T = LP.Character.UpperTorso
