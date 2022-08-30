@@ -1,0 +1,502 @@
+-- THIS WAS MADE BY (LOODY_XMER)5605 , @kd_xr.
+
+local Looody = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local title = Instance.new("TextLabel")
+local bottomtitle = Instance.new("TextButton")
+local gui = Instance.new("TextButton")
+local fly = Instance.new("TextButton")
+local ESP = Instance.new("TextButton")
+local b1 = Instance.new("TextButton")
+local infjump = Instance.new("TextButton")
+local Qtotp = Instance.new("TextButton")
+local fb = Instance.new("TextButton")
+local OP = Instance.new("TextButton")
+local close = Instance.new("TextButton")
+
+--Properties:
+Looody.Name = "Looody"
+Looody.Parent = game.CoreGui
+
+main.Name = "main"
+main.Parent = Looody
+main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+main.Position = UDim2.new(0.013771977, 0, 0.74591195, 0)
+main.Size = UDim2.new(0, 178, 0, 147)
+main.Visible = false
+main.Active = true
+main.Transparency = 0.2
+main.Draggable = true
+
+title.Name = "title"
+title.Parent = main
+title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title.Size = UDim2.new(0, 153, 0, 29)
+title.Font = Enum.Font.Highway
+title.Text = "Welcome To Loody's GUI"
+title.TextColor3 = Color3.fromRGB(89, 34, 89)
+title.TextSize = 14.000
+
+bottomtitle.Name = "bottomtitle"
+bottomtitle.Parent = main
+bottomtitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+bottomtitle.Position = UDim2.new(0, 0, 0.850340128, 0)
+bottomtitle.Size = UDim2.new(0, 178, 0, 22)
+bottomtitle.Font = Enum.Font.GothamBlack
+bottomtitle.Text = "HACKING IS NOT A CRIME, IT'S AN ART(X)"
+bottomtitle.TextColor3 = Color3.fromRGB(89, 34, 89)
+bottomtitle.TextScaled = true
+bottomtitle.TextSize = 20
+bottomtitle.TextWrapped = true
+bottomtitle.MouseButton1Down:connect(
+    function()
+        game.CoreGui.Looody:Destroy()
+    end
+)
+
+bottomtitle.MouseEnter:Connect(
+    function()
+        title.Text = "Delete GUI"
+        title.TextColor3 = Color3.fromRGB(255, 0, 0)
+    end
+)
+
+bottomtitle.MouseLeave:Connect(
+    function()
+        title.Text = "Welcome To Loody's GUI"
+        title.TextColor3 = Color3.fromRGB(89, 34, 89)
+    end
+)
+
+fly.Name = "fly"
+fly.Parent = main
+fly.BackgroundColor3 = Color3.fromRGB(0, 255, 238)
+fly.Position = UDim2.new(0.69, 0, 0.238095239, 0)
+fly.Size = UDim2.new(0, 30, 0, 22)
+fly.Font = Enum.Font.Fantasy
+fly.Text = "FLY"
+fly.TextColor3 = Color3.fromRGB(0, 0, 0)
+fly.TextSize = 14.000
+fly.BackgroundTransparency = 0.4
+fly.Visible = true
+fly.MouseButton1Down:connect(
+    function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/loodyxmer/Scripts/main/fly"))()
+    end
+)
+
+fly.MouseEnter:Connect(
+    function()
+        title.Text = "FLY TOGGLE ->(F)"
+        title.TextColor3 = Color3.fromRGB(40, 89, 40)
+    end
+)
+
+fly.MouseLeave:Connect(
+    function()
+        title.Text = "Welcome To Loody's GUI"
+        title.TextColor3 = Color3.fromRGB(89, 34, 89)
+    end
+)
+
+ESP.Name = "ESP"
+ESP.Parent = main
+ESP.BackgroundColor3 = Color3.fromRGB(0, 255, 238)
+ESP.Position = UDim2.new(0.140449435, 0, 0.238095239, 0)
+ESP.Size = UDim2.new(0, 30, 0, 22)
+ESP.Font = Enum.Font.Fantasy
+ESP.Text = "ESP"
+ESP.TextColor3 = Color3.fromRGB(0, 0, 0)
+ESP.TextSize = 14.000
+ESP.BackgroundTransparency = 0.4
+ESP.Visible = true
+ESP.MouseButton1Down:connect(
+    function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/loodyxmer/Scripts/main/babft%20esp"))()
+    end
+)
+
+ESP.MouseEnter:Connect(
+    function()
+        title.Text = "E-S-P"
+        title.TextColor3 = Color3.fromRGB(40, 89, 40)
+    end
+)
+
+ESP.MouseLeave:Connect(
+    function()
+        title.Text = "Welcome To Loody's GUI"
+        title.TextColor3 = Color3.fromRGB(89, 34, 89)
+    end
+)
+
+gui.Name = "S&J GUI"
+gui.Parent = main
+gui.BackgroundColor3 = Color3.fromRGB(0, 255, 238)
+gui.Position = UDim2.new(0.320224732, 0, 0.238095239, 0)
+gui.Size = UDim2.new(0, 64, 0, 22)
+gui.Font = Enum.Font.Fantasy
+gui.Text = "S&J GUI"
+gui.TextColor3 = Color3.fromRGB(0, 0, 0)
+gui.TextSize = 14.000
+gui.Visible = true
+gui.MouseButton1Down:connect(
+    function()
+        loadstring(
+            game:HttpGet(
+                "https://raw.githubusercontent.com/loodyxmer/Scripts/main/Walkspeed%20and%20JumpPower%20Script"
+            )
+        )()
+    end
+)
+
+gui.MouseEnter:Connect(
+    function()
+        title.Text = "WSpeed & HJump"
+        title.TextColor3 = Color3.fromRGB(40, 89, 40)
+    end
+)
+
+gui.MouseLeave:Connect(
+    function()
+        title.Text = "Welcome To Loody's GUI"
+        title.TextColor3 = Color3.fromRGB(89, 34, 89)
+    end
+)
+
+b1.Name = "b1"
+b1.Parent = main
+b1.BackgroundColor3 = Color3.fromRGB(0, 255, 238)
+b1.Position = UDim2.new(0.140449435, 0, 0.421768725, 0)
+b1.Size = UDim2.new(0, 64, 0, 22)
+b1.Font = Enum.Font.Fantasy
+b1.Text = "Button"
+b1.TextColor3 = Color3.fromRGB(0, 0, 0)
+b1.TextSize = 16.000
+b1.Visible = true
+b1.MouseButton1Down:connect(
+    function()
+        local buttons = Instance.new("Model", workspace)
+        buttons.Name = "Items of Interest"
+
+        for i, v in pairs(game.workspace.Modes:GetDescendants()) do
+            if v.Name == "Button" then
+                v.Parent = buttons
+            end
+        end
+
+        local highlight = Instance.new("Highlight")
+        highlight.Parent = buttons
+        highlight.Adornee = buttons
+        highlight.FillColor = Color3.new(0, 255, 0)
+        highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+        highlight.FillTransparency = 0.5
+    end
+)
+
+b1.MouseEnter:Connect(
+    function()
+        title.Text = "Show-Buttons !"
+        title.TextColor3 = Color3.fromRGB(40, 89, 40)
+    end
+)
+
+b1.MouseLeave:Connect(
+    function()
+        title.Text = "Welcome To Loody's GUI"
+        title.TextColor3 = Color3.fromRGB(89, 34, 89)
+    end
+)
+
+infjump.Name = "inf jump"
+infjump.Parent = main
+infjump.BackgroundColor3 = Color3.fromRGB(0, 255, 238)
+infjump.Position = UDim2.new(0.140449435, 0, 0.625850379, 0)
+infjump.Size = UDim2.new(0, 64, 0, 22)
+infjump.Font = Enum.Font.Fantasy
+infjump.Text = "Inf-Jump"
+infjump.TextColor3 = Color3.fromRGB(0, 0, 0)
+infjump.TextSize = 14.000
+infjump.MouseButton1Down:connect(
+    function()
+        game:GetService("UserInputService").JumpRequest:connect(
+            function()
+                game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):ChangeState(
+                    "Jumping"
+                )
+            end
+        )
+    end
+)
+
+infjump.MouseEnter:Connect(
+    function()
+        title.Text = "Infinte Jump"
+        title.TextColor3 = Color3.fromRGB(40, 89, 40)
+    end
+)
+
+infjump.MouseLeave:Connect(
+    function()
+        title.Text = "Welcome To Loody's GUI"
+        title.TextColor3 = Color3.fromRGB(89, 34, 89)
+    end
+)
+
+Qtotp.Name = "Q to tp"
+Qtotp.Parent = main
+Qtotp.BackgroundColor3 = Color3.fromRGB(0, 255, 238)
+Qtotp.Position = UDim2.new(0.49999997, 0, 0.421768755, 0)
+Qtotp.Size = UDim2.new(0, 64, 0, 22)
+Qtotp.Font = Enum.Font.Fantasy
+Qtotp.Text = "Q to tp"
+Qtotp.TextColor3 = Color3.fromRGB(0, 0, 0)
+Qtotp.TextSize = 14.000
+Qtotp.MouseButton1Down:connect(
+    function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/loodyxmer/Scripts/main/Q-TO-TP"))()
+    end
+)
+
+Qtotp.MouseEnter:Connect(
+    function()
+        title.Text = "Press 'Q' to tp"
+        title.TextColor3 = Color3.fromRGB(40, 89, 40)
+    end
+)
+
+Qtotp.MouseLeave:Connect(
+    function()
+        title.Text = "Welcome To Loody's GUI"
+        title.TextColor3 = Color3.fromRGB(89, 34, 89)
+    end
+)
+
+fb.Name = "fb"
+fb.Parent = main
+fb.BackgroundColor3 = Color3.fromRGB(0, 255, 238)
+fb.Position = UDim2.new(0.49999997, 0, 0.625850379, 0)
+fb.Size = UDim2.new(0, 64, 0, 22)
+fb.Font = Enum.Font.Fantasy
+fb.Text = "Bright"
+fb.TextColor3 = Color3.fromRGB(0, 0, 0)
+fb.TextScaled = false
+fb.TextSize = 16.000
+fb.TextWrapped = true
+fb.Visible = true
+fb.MouseButton1Down:connect(
+    function()
+        --FullBright
+        if not _G.FullBrightExecuted then
+            _G.FullBrightEnabled = false
+
+            _G.NormalLightingSettings = {
+                Brightness = game:GetService("Lighting").Brightness,
+                ClockTime = game:GetService("Lighting").ClockTime,
+                FogEnd = game:GetService("Lighting").FogEnd,
+                GlobalShadows = game:GetService("Lighting").GlobalShadows,
+                Ambient = game:GetService("Lighting").Ambient
+            }
+
+            game:GetService("Lighting"):GetPropertyChangedSignal("Brightness"):Connect(
+                function()
+                    if
+                        game:GetService("Lighting").Brightness ~= 1 and
+                            game:GetService("Lighting").Brightness ~= _G.NormalLightingSettings.Brightness
+                     then
+                        _G.NormalLightingSettings.Brightness = game:GetService("Lighting").Brightness
+                        if not _G.FullBrightEnabled then
+                            repeat
+                                wait()
+                            until _G.FullBrightEnabled
+                        end
+                        game:GetService("Lighting").Brightness = 1
+                    end
+                end
+            )
+
+            game:GetService("Lighting"):GetPropertyChangedSignal("ClockTime"):Connect(
+                function()
+                    if
+                        game:GetService("Lighting").ClockTime ~= 12 and
+                            game:GetService("Lighting").ClockTime ~= _G.NormalLightingSettings.ClockTime
+                     then
+                        _G.NormalLightingSettings.ClockTime = game:GetService("Lighting").ClockTime
+                        if not _G.FullBrightEnabled then
+                            repeat
+                                wait()
+                            until _G.FullBrightEnabled
+                        end
+                        game:GetService("Lighting").ClockTime = 12
+                    end
+                end
+            )
+
+            game:GetService("Lighting"):GetPropertyChangedSignal("FogEnd"):Connect(
+                function()
+                    if
+                        game:GetService("Lighting").FogEnd ~= 786543 and
+                            game:GetService("Lighting").FogEnd ~= _G.NormalLightingSettings.FogEnd
+                     then
+                        _G.NormalLightingSettings.FogEnd = game:GetService("Lighting").FogEnd
+                        if not _G.FullBrightEnabled then
+                            repeat
+                                wait()
+                            until _G.FullBrightEnabled
+                        end
+                        game:GetService("Lighting").FogEnd = 786543
+                    end
+                end
+            )
+
+            game:GetService("Lighting"):GetPropertyChangedSignal("GlobalShadows"):Connect(
+                function()
+                    if
+                        game:GetService("Lighting").GlobalShadows ~= false and
+                            game:GetService("Lighting").GlobalShadows ~= _G.NormalLightingSettings.GlobalShadows
+                     then
+                        _G.NormalLightingSettings.GlobalShadows = game:GetService("Lighting").GlobalShadows
+                        if not _G.FullBrightEnabled then
+                            repeat
+                                wait()
+                            until _G.FullBrightEnabled
+                        end
+                        game:GetService("Lighting").GlobalShadows = false
+                    end
+                end
+            )
+
+            game:GetService("Lighting"):GetPropertyChangedSignal("Ambient"):Connect(
+                function()
+                    if
+                        game:GetService("Lighting").Ambient ~= Color3.fromRGB(178, 178, 178) and
+                            game:GetService("Lighting").Ambient ~= _G.NormalLightingSettings.Ambient
+                     then
+                        _G.NormalLightingSettings.Ambient = game:GetService("Lighting").Ambient
+                        if not _G.FullBrightEnabled then
+                            repeat
+                                wait()
+                            until _G.FullBrightEnabled
+                        end
+                        game:GetService("Lighting").Ambient = Color3.fromRGB(178, 178, 178)
+                    end
+                end
+            )
+
+            game:GetService("Lighting").Brightness = 1
+            game:GetService("Lighting").ClockTime = 12
+            game:GetService("Lighting").FogEnd = 786543
+            game:GetService("Lighting").GlobalShadows = false
+            game:GetService("Lighting").Ambient = Color3.fromRGB(178, 178, 178)
+
+            local LatestValue = true
+            spawn(
+                function()
+                    repeat
+                        wait()
+                    until _G.FullBrightEnabled
+                    while wait() do
+                        if _G.FullBrightEnabled ~= LatestValue then
+                            if not _G.FullBrightEnabled then
+                                game:GetService("Lighting").Brightness = _G.NormalLightingSettings.Brightness
+                                game:GetService("Lighting").ClockTime = _G.NormalLightingSettings.ClockTime
+                                game:GetService("Lighting").FogEnd = _G.NormalLightingSettings.FogEnd
+                                game:GetService("Lighting").GlobalShadows = _G.NormalLightingSettings.GlobalShadows
+                                game:GetService("Lighting").Ambient = _G.NormalLightingSettings.Ambient
+                            else
+                                game:GetService("Lighting").Brightness = 1
+                                game:GetService("Lighting").ClockTime = 12
+                                game:GetService("Lighting").FogEnd = 786543
+                                game:GetService("Lighting").GlobalShadows = false
+                                game:GetService("Lighting").Ambient = Color3.fromRGB(178, 178, 178)
+                            end
+                            LatestValue = not LatestValue
+                        end
+                    end
+                end
+            )
+        end
+
+        _G.FullBrightExecuted = true
+        _G.FullBrightEnabled = not _G.FullBrightEnabled
+    end
+)
+
+fb.MouseEnter:Connect(
+    function()
+        title.Text = "Full-Bright !"
+        title.TextColor3 = Color3.fromRGB(40, 89, 40)
+    end
+)
+
+fb.MouseLeave:Connect(
+    function()
+        title.Text = "Welcome To Loody's GUI"
+        title.TextColor3 = Color3.fromRGB(89, 34, 89)
+    end
+)
+
+close.Name = "close"
+close.Parent = main
+close.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+close.Position = UDim2.new(0.859550536, 0, 0, 0)
+close.Size = UDim2.new(0, 25, 0, 29)
+close.Font = Enum.Font.Highway
+close.Text = "X"
+close.TextColor3 = Color3.fromRGB(0, 0, 0)
+close.TextSize = 20.000
+close.Transparency = 0.2
+close.MouseButton1Down:connect(
+    function()
+        main.Visible = false
+        OP.Visible = true
+    end
+)
+
+close.MouseEnter:Connect(
+    function()
+        title.Text = "Minimize Gui '-'"
+        title.TextColor3 = Color3.fromRGB(10, 0, 101)
+    end
+)
+
+close.MouseLeave:Connect(
+    function()
+        title.Text = "Welcome To Loody's GUI"
+        title.TextColor3 = Color3.fromRGB(89, 34, 89)
+    end
+)
+
+OP.Name = "Open"
+OP.Parent = Looody
+OP.BackgroundColor3 = Color3.fromRGB(0, 255, 238)
+OP.Position = UDim2.new(0.0129749756, 0, 0.737051845, 0)
+OP.Size = UDim2.new(0, 115, 0, 43)
+OP.Font = Enum.Font.Fantasy
+OP.Text = "OPEN"
+OP.TextColor3 = Color3.fromRGB(0, 0, 0)
+OP.TextScaled = true
+OP.TextSize = 20.000
+OP.Draggable = true
+OP.Visible = true
+OP.Active = true
+OP.MouseButton1Down:connect(
+    function()
+        main.Visible = true
+        OP.Visible = false
+    end
+)
+
+OP.MouseEnter:Connect(
+    function()
+        OP.Text = "'Find \n The Button'"
+        OP.TextColor3 = Color3.fromRGB(255, 155, 0)
+    end
+)
+
+OP.MouseLeave:Connect(
+    function()
+        OP.Text = "OPEN"
+        OP.TextColor3 = Color3.fromRGB(0, 0, 0)
+    end
+)
