@@ -360,27 +360,29 @@ function get_user_tycoon()
     end
 end
 
-function run()
     local user_tycoon = get_user_tycoon()
+
     local cash_register = user_tycoon.CashRegister.Ching
-    local ultima_cash_register = user_tycoon.UltimaPad.CashRegister2.Ching
-    
     cash_register.Transparency = 1
     cash_register.CanCollide = false
 
-    ultima_cash_register.Transparency = 1
-    ultima_cash_register.CanCollide = false
             spawn(function()
                 while true do
                     cash_register.Position = game.Players.LocalPlayer.Character.Head.Position 
-                    ultima_cash_register.Position = game.Players.LocalPlayer.Character.Head.Position
                     wait(0.5)
                 end
             end)
 
+            local ultima_cash_register = user_tycoon.UltimaPad.CashRegister2.Ching
+            ultima_cash_register.Transparency = 1
+            ultima_cash_register.CanCollide = false
 
-end
-run()
+            spawn(function()
+                while true do 
+                    ultima_cash_register.Position = game.Players.LocalPlayer.Character.Head.Position
+                    wait(0.5)
+                end
+            end)
 			
 
 		end
