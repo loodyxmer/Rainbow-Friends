@@ -11,7 +11,7 @@ local uptc = Instance.new("TextButton")
 local infy = Instance.new("TextButton")
 local infjump = Instance.new("TextButton")
 local Qtotp = Instance.new("TextButton")
-local SplitBody = Instance.new("TextButton")
+local esp = Instance.new("TextButton")
 local OP = Instance.new("TextButton")
 local close = Instance.new("TextButton")
 
@@ -295,31 +295,31 @@ Qtotp.MouseLeave:Connect(
     end
 )
 
-SplitBody.Name = "SplitBody"
-SplitBody.Parent = main
-SplitBody.BackgroundColor3 = Color3.fromRGB(0, 255, 238)
-SplitBody.Position = UDim2.new(0.49999997, 0, 0.625850379, 0)
-SplitBody.Size = UDim2.new(0, 64, 0, 22)
-SplitBody.Font = Enum.Font.Fantasy
-SplitBody.Text = "Split-Body"
-SplitBody.TextColor3 = Color3.fromRGB(0, 0, 0)
-SplitBody.TextScaled = true
-SplitBody.TextSize = 14.000
-SplitBody.TextWrapped = true
-SplitBody.MouseButton1Down:connect(
+esp.Name = "esp"
+esp.Parent = main
+esp.BackgroundColor3 = Color3.fromRGB(0, 255, 238)
+esp.Position = UDim2.new(0.49999997, 0, 0.625850379, 0)
+esp.Size = UDim2.new(0, 64, 0, 22)
+esp.Font = Enum.Font.Fantasy
+esp.Text = "E-S-P"
+esp.TextColor3 = Color3.fromRGB(0, 0, 0)
+esp.TextScaled = false
+esp.TextSize = 14.000
+esp.TextWrapped = true
+esp.MouseButton1Down:connect(
     function()
-        game.Players.LocalPlayer.Character.UpperTorso.Waist:remove()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/loodyxmer/Scripts/main/ESP"))()
     end
 )
 
-SplitBody.MouseEnter:Connect(
+esp.MouseEnter:Connect(
     function()
-        title.Text = "Splits-Ur-Body"
+        title.Text = "Player-ESP"
         title.TextColor3 = Color3.fromRGB(40, 89, 40)
     end
 )
 
-SplitBody.MouseLeave:Connect(
+esp.MouseLeave:Connect(
     function()
         title.Text = "Welcome To Loody's GUI"
         title.TextColor3 = Color3.fromRGB(89, 34, 89)
@@ -378,10 +378,10 @@ OP.MouseButton1Down:connect(
 )
 
 OP.MouseEnter:Connect(
-    function()
-        OP.Text = "'UltraPowerTycoon'"
-        OP.TextColor3 = Color3.fromRGB(255, 255, 255)
-    end
+function()
+    OP.Text = "Ultra\nPower\nTycoon"
+    OP.TextColor3 = Color3.fromRGB(255, 60, 100)
+end
 )
 
 OP.MouseLeave:Connect(
