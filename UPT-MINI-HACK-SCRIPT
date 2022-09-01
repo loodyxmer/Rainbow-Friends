@@ -114,7 +114,7 @@ CLOSE.TextScaled = true
 CLOSE.TextSize = 14.000
 CLOSE.TextWrapped = true
 CLOSE.MouseButton1Click:Connect(function()
-for i=3,1,-1 do
+for i=10,1,-1 do
 wait(0.01)
 game.CoreGui.AK.INFO:Destroy()
 I.Visible = true
@@ -130,7 +130,7 @@ R.BorderColor3 = Color3.fromRGB(0, 0, 0)
 R.Position = UDim2.new(0.087, 0, 0.25, 0)
 R.Size = UDim2.new(0, 350, 0, 100)
 R.Font = Enum.Font.SourceSans
-R.Text = "(R) Button -> Remove kill function from laser doors + Collect-Cash + Collects all tools + Remove-WALLS + Remove Annoying sounds"
+R.Text = "(R) Button -> Remove kill function from laser doors + Auto-Collect-Cash + Collects-All-Tools + Remove-WALLS + Remove-Annoying-DING-sounds"
 R.TextColor3 = Color3.fromRGB(0, 0, 0)
 R.TextScaled = true
 R.TextSize = 14.000
@@ -424,7 +424,7 @@ game:GetService("ContextActionService"):BindAction("Tack3", tacking, false, Enum
 local function tacking(actionName,inputState)
     if actionName == "Tack4" then
         if inputState == Enum.UserInputState.Begin then
-			spawn(function ()
+			spawn(function()
 				
 			function get_user_tycoon() --Detect-Tycoon-Name
 				for i, v in pairs(workspace.Tycoons:GetChildren()) do
@@ -438,9 +438,10 @@ local function tacking(actionName,inputState)
 	
 	function run() --Runner
 		local function iterate_in(object)
-			for i, v in pairs(object:GetChildren()) do
+			for i, v in pairs(object:GetDescendants()) do
 				if v.Name == "Touch" then
 					if v.Parent.Name:match("Robux") or v.Parent.Name:match("Shop") then
+                        v:Destroy()
 					else
 						v.CanCollide = false
 						v.Transparency = 1
