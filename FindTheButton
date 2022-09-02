@@ -87,7 +87,7 @@ fly.MouseButton1Down:connect(
 
 fly.MouseEnter:Connect(
     function()
-        title.Text = "FLY TOGGLE ->(F)"
+        title.Text = "FLY TOGGLE ->(G)"
         title.TextColor3 = Color3.fromRGB(40, 89, 40)
     end
 )
@@ -170,14 +170,15 @@ b1.BackgroundColor3 = Color3.fromRGB(0, 255, 238)
 b1.Position = UDim2.new(0.140449435, 0, 0.421768725, 0)
 b1.Size = UDim2.new(0, 64, 0, 22)
 b1.Font = Enum.Font.Fantasy
-b1.Text = "Button"
+b1.Text = "Button-ESP"
 b1.TextColor3 = Color3.fromRGB(0, 0, 0)
-b1.TextSize = 16.000
+b1.TextSize = 12.000
 b1.Visible = true
+b1.TextScaled = false
 b1.MouseButton1Down:connect(
     function()
         local buttons = Instance.new("Model", workspace)
-        buttons.Name = "Items of Interest"
+        buttons.Name = "buttons"
 
         for i, v in pairs(game.workspace.Modes:GetDescendants()) do
             if v.Name == "Button" then
