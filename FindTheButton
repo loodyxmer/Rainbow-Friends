@@ -180,8 +180,8 @@ b1.MouseButton1Down:connect(
         local buttons = Instance.new("Model", workspace)
         buttons.Name = "buttons"
 
-        for i, v in pairs(game.workspace.Modes:GetDescendants()) do
-            if v.Name == "Button" then
+        for i, v in pairs(game.workspace:GetDescendants()) do
+            if v.Name == "Button" or v.Name == "Button1" or v.Name == "Button2" or v.Name == "Button3" or v.Name == "Button4" or v.Name == "Button5" or v.Name == "Button6" or v.Name == "Button7" or v.Name == "Button8" or v.Name == "Button9" or v.Name == "Button10" then
                 v.Parent = buttons
             end
         end
@@ -189,15 +189,15 @@ b1.MouseButton1Down:connect(
         local highlight = Instance.new("Highlight")
         highlight.Parent = buttons
         highlight.Adornee = buttons
-        highlight.FillColor = Color3.new(0, 255, 0)
+        highlight.FillColor = Color3.new(0, 0, 0)
         highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
-        highlight.FillTransparency = 0.5
+        highlight.FillTransparency = 0.87
     end
 )
 
 b1.MouseEnter:Connect(
     function()
-        title.Text = "Show-Buttons !"
+        title.Text = "Re-Click if not loaded"
         title.TextColor3 = Color3.fromRGB(40, 89, 40)
     end
 )
@@ -490,7 +490,7 @@ OP.MouseButton1Down:connect(
 
 OP.MouseEnter:Connect(
     function()
-        OP.Text = "'Find \n The Button'"
+        OP.Text = "Find\nThe Button"
         OP.TextColor3 = Color3.fromRGB(255, 155, 0)
     end
 )
