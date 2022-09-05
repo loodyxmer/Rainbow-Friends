@@ -1,3 +1,6 @@
+
+if getgenv().loodykey ~= nil then
+
 -- THIS WAS MADE BY (LOODY_XMER)5605 , @kd_xr.
 
 local Looody = Instance.new("ScreenGui")
@@ -501,3 +504,14 @@ OP.MouseLeave:Connect(
         OP.TextColor3 = Color3.fromRGB(0, 0, 0)
     end
 )
+
+else
+    for i=3,1,-1 do
+        game:GetService("StarterGui"):SetCore("SendNotification",{
+	    Title = "BRUH", -- Required
+	    Text = "USE THE MAIN SCRIPT", -- Required
+	    Icon = "rbxthumb://type=Asset&id=9157373568&w=150&h=150" -- Optional
+        })
+        wait(1)
+    end
+ end
